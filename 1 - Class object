@@ -1,0 +1,12 @@
+class People():
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+
+    def showDetails(self):
+        print(self.name,self.age,self.gender)
+
+p1= People("john",18,"M")
+p1.showDetails()
+

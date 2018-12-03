@@ -28,22 +28,25 @@ register1 = CashRegister()
 register1.addItem(0.90)
 register1.addItem(0.95)
 register1.getPounds()
-register1.giveChange(10)
+register1.giveChange(float(input("Amount money received to pay register1?")))
 
 register2 = CashRegister()
 register2.addItem(1.90)
 register2.addItem(2.30)
 register2.getPounds()
-register2.giveChange(10)
+register2.giveChange(float(input("Amount money received to pay register2?")))
 
 print("register1_itemCount is: \t", register1._itemCount)
 print("register1_totalPrice is: \t", register1._totalPrice)
-print("register2_itemCount is: \t", register2._itemCount)
-print("register2_totalPrice is: \t", register2._totalPrice,"\n")
-
 print("register1_totalSale is: \t", register1._totalSale)
-print("register2_totalSale is: \t",register2._totalSale)
+print("register1_giveChange is: \t",register1._change,"\n")
 
-print("register1_giveChange is: \t",register1._change)
+print("register2_itemCount is: \t", register2._itemCount)
+print("register2_totalPrice is: \t", register2._totalPrice)
+print("register2_totalSale is: \t",register2._totalSale)
 print("register2_giveChange is: \t",register2._change)
+
+
+
+
 
